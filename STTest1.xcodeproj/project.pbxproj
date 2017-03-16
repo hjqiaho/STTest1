@@ -16,21 +16,37 @@
 		311626AE1E49608F008A9500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311626AC1E49608F008A9500 /* LaunchScreen.storyboard */; };
 		311626B91E49608F008A9500 /* STTest1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 311626B81E49608F008A9500 /* STTest1Tests.m */; };
 		311626C41E49608F008A9500 /* STTest1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 311626C31E49608F008A9500 /* STTest1UITests.m */; };
-		3117FF991E4AD6B000C8304B /* libairplaysdk-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3117FF971E4AD6B000C8304B /* libairplaysdk-1.a */; };
-		3117FF9A1E4AD6B000C8304B /* libairplaysdk-2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3117FF981E4AD6B000C8304B /* libairplaysdk-2.a */; };
 		3117FFA01E4B017800C8304B /* icon_22x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117FF9C1E4B017800C8304B /* icon_22x29.png */; };
 		3117FFA11E4B017800C8304B /* icon_44x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117FF9D1E4B017800C8304B /* icon_44x58.png */; };
 		3117FFA21E4B017800C8304B /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117FF9E1E4B017800C8304B /* icon_64x64.png */; };
 		3117FFA31E4B017800C8304B /* icon_320x320.png in Resources */ = {isa = PBXBuildFile; fileRef = 3117FF9F1E4B017800C8304B /* icon_320x320.png */; };
 		311A85CC1E4C049E009B4471 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311A85CB1E4C049E009B4471 /* ThirdViewController.m */; };
-		314BAB921E49E0CE002DD4AC /* CSScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BAB8D1E49E0CE002DD4AC /* CSScreenRecorder.m */; };
-		314BAB931E49E0CE002DD4AC /* IDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BAB8F1E49E0CE002DD4AC /* IDFileManager.m */; };
-		314BAB941E49E0CE002DD4AC /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BAB911E49E0CE002DD4AC /* Utilities.m */; };
 		314BABB31E49E1E7002DD4AC /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BABB21E49E1E7002DD4AC /* libstdc++.6.tbd */; };
 		314BABB51E49E1F4002DD4AC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BABB41E49E1F4002DD4AC /* libstdc++.tbd */; };
 		314BABB71E49E202002DD4AC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BABB61E49E202002DD4AC /* libiconv.tbd */; };
-		314BAC751E49E75D002DD4AC /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BAC711E49E75D002DD4AC /* libintl.a */; };
-		314BAC761E49E75D002DD4AC /* libmp4v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BAC721E49E75D002DD4AC /* libmp4v2.a */; };
+		3190C07B1E7A962F005CF83E /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319FE9271E4B69AE009EDEFC /* ReplayKit.framework */; };
+		3190C07F1E7A962F005CF83E /* MovieClipHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C07E1E7A962F005CF83E /* MovieClipHandler.m */; };
+		3190C0821E7A962F005CF83E /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0811E7A962F005CF83E /* SampleHandler.m */; };
+		3190C0891E7A962F005CF83E /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319FE9271E4B69AE009EDEFC /* ReplayKit.framework */; };
+		3190C08B1E7A962F005CF83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190C08A1E7A962F005CF83E /* UIKit.framework */; };
+		3190C08F1E7A9630005CF83E /* BroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C08E1E7A962F005CF83E /* BroadcastViewController.m */; };
+		3190C0921E7A9630005CF83E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3190C0901E7A9630005CF83E /* MainInterface.storyboard */; };
+		3190C0961E7A9630005CF83E /* ReplayRTSPBroUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3190C0881E7A962F005CF83E /* ReplayRTSPBroUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3190C0991E7A9630005CF83E /* ReplayRTSPBro.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3190C07A1E7A962F005CF83E /* ReplayRTSPBro.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3190C0DA1E7A98E4005CF83E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190C0D91E7A98E4005CF83E /* CoreGraphics.framework */; };
+		3190C0DC1E7A98F0005CF83E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190C0DB1E7A98F0005CF83E /* Foundation.framework */; };
+		3190C0DD1E7A98F8005CF83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190C08A1E7A962F005CF83E /* UIKit.framework */; };
+		3190C0DF1E7A9900005CF83E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190C0DE1E7A9900005CF83E /* AVFoundation.framework */; };
+		3190C0E11E7A990D005CF83E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190C0E01E7A990D005CF83E /* CoreMedia.framework */; };
+		3190C0E31E7A9916005CF83E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190C0E21E7A9916005CF83E /* CoreVideo.framework */; };
+		3190C0F71E7A9A50005CF83E /* AVEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0E71E7A9A50005CF83E /* AVEncoder.mm */; };
+		3190C0F81E7A9A50005CF83E /* MP4Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0E91E7A9A50005CF83E /* MP4Atom.m */; };
+		3190C0F91E7A9A50005CF83E /* NALUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0EA1E7A9A50005CF83E /* NALUnit.cpp */; };
+		3190C0FA1E7A9A50005CF83E /* VideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0ED1E7A9A50005CF83E /* VideoEncoder.m */; };
+		3190C0FB1E7A9A50005CF83E /* CameraServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0EF1E7A9A50005CF83E /* CameraServer.m */; };
+		3190C0FC1E7A9A50005CF83E /* RTSPClientConnection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0F21E7A9A50005CF83E /* RTSPClientConnection.mm */; };
+		3190C0FD1E7A9A50005CF83E /* RTSPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0F41E7A9A50005CF83E /* RTSPMessage.m */; };
+		3190C0FE1E7A9A50005CF83E /* RTSPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0F61E7A9A50005CF83E /* RTSPServer.m */; };
 		319FE9281E4B69AE009EDEFC /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319FE9271E4B69AE009EDEFC /* ReplayKit.framework */; };
 		95C06DCD5BC604234D368127 /* libPods-STTest1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26000CC6577BB61C3C7AE30B /* libPods-STTest1.a */; };
 /* End PBXBuildFile section */
@@ -50,7 +66,36 @@
 			remoteGlobalIDString = 311626971E49608F008A9500;
 			remoteInfo = STTest1;
 		};
+		3190C0941E7A9630005CF83E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311626901E49608F008A9500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3190C0871E7A962F005CF83E;
+			remoteInfo = ReplayRTSPBroUI;
+		};
+		3190C0971E7A9630005CF83E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311626901E49608F008A9500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3190C0791E7A962F005CF83E;
+			remoteInfo = ReplayRTSPBro;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3190C0A01E7A9630005CF83E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3190C0991E7A9630005CF83E /* ReplayRTSPBro.appex in Embed App Extensions */,
+				3190C0961E7A9630005CF83E /* ReplayRTSPBroUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		26000CC6577BB61C3C7AE30B /* libPods-STTest1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STTest1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,64 +117,49 @@
 		311626BF1E49608F008A9500 /* STTest1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STTest1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		311626C31E49608F008A9500 /* STTest1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTest1UITests.m; sourceTree = "<group>"; };
 		311626C51E49608F008A9500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3117FF971E4AD6B000C8304B /* libairplaysdk-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libairplaysdk-1.a"; sourceTree = "<group>"; };
-		3117FF981E4AD6B000C8304B /* libairplaysdk-2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libairplaysdk-2.a"; sourceTree = "<group>"; };
 		3117FF9C1E4B017800C8304B /* icon_22x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_22x29.png; sourceTree = "<group>"; };
 		3117FF9D1E4B017800C8304B /* icon_44x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_44x58.png; sourceTree = "<group>"; };
 		3117FF9E1E4B017800C8304B /* icon_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_64x64.png; sourceTree = "<group>"; };
 		3117FF9F1E4B017800C8304B /* icon_320x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_320x320.png; sourceTree = "<group>"; };
 		311A85CA1E4C049E009B4471 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		311A85CB1E4C049E009B4471 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		311A85D01E4C069D009B4471 /* CoreSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreSurface.h; sourceTree = "<group>"; };
-		311A85D21E4C069D009B4471 /* IOBSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOBSD.h; sourceTree = "<group>"; };
-		311A85D31E4C069D009B4471 /* IOCFBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFBundle.h; sourceTree = "<group>"; };
-		311A85D41E4C069D009B4471 /* IOCFPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFPlugIn.h; sourceTree = "<group>"; };
-		311A85D51E4C069D009B4471 /* IOCFSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFSerialize.h; sourceTree = "<group>"; };
-		311A85D61E4C069D009B4471 /* IOCFUnserialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFUnserialize.h; sourceTree = "<group>"; };
-		311A85D71E4C069D009B4471 /* IOCFURLAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFURLAccess.h; sourceTree = "<group>"; };
-		311A85D81E4C069D009B4471 /* IODataQueueClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODataQueueClient.h; sourceTree = "<group>"; };
-		311A85D91E4C069D009B4471 /* IODataQueueShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODataQueueShared.h; sourceTree = "<group>"; };
-		311A85DA1E4C069D009B4471 /* IOKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitKeys.h; sourceTree = "<group>"; };
-		311A85DB1E4C069D009B4471 /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
-		311A85DC1E4C069D009B4471 /* iokitmig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iokitmig.h; sourceTree = "<group>"; };
-		311A85DD1E4C069D009B4471 /* IOKitServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitServer.h; sourceTree = "<group>"; };
-		311A85DE1E4C069D009B4471 /* IOMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMessage.h; sourceTree = "<group>"; };
-		311A85DF1E4C069D009B4471 /* IOReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOReturn.h; sourceTree = "<group>"; };
-		311A85E01E4C069D009B4471 /* IOSharedLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSharedLock.h; sourceTree = "<group>"; };
-		311A85E11E4C069D009B4471 /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTypes.h; sourceTree = "<group>"; };
-		311A85E21E4C069D009B4471 /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMessageNotification.h; sourceTree = "<group>"; };
-		311A85E31E4C069D009B4471 /* IOMobileFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMobileFrameBuffer.h; sourceTree = "<group>"; };
-		311A85E51E4C069D009B4471 /* IOSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurface.h; sourceTree = "<group>"; };
-		311A85E61E4C069D009B4471 /* IOSurfaceAccelerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurfaceAccelerator.h; sourceTree = "<group>"; };
-		311A85E71E4C069D009B4471 /* IOSurfaceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurfaceAPI.h; sourceTree = "<group>"; };
-		311A85E81E4C069D009B4471 /* IOSurfaceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurfaceBase.h; sourceTree = "<group>"; };
-		314BAB8C1E49E0CE002DD4AC /* CSScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSScreenRecorder.h; sourceTree = "<group>"; };
-		314BAB8D1E49E0CE002DD4AC /* CSScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSScreenRecorder.m; sourceTree = "<group>"; };
-		314BAB8E1E49E0CE002DD4AC /* IDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDFileManager.h; sourceTree = "<group>"; };
-		314BAB8F1E49E0CE002DD4AC /* IDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDFileManager.m; sourceTree = "<group>"; };
-		314BAB901E49E0CE002DD4AC /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
-		314BAB911E49E0CE002DD4AC /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		314BABB21E49E1E7002DD4AC /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		314BABB41E49E1F4002DD4AC /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		314BABB61E49E202002DD4AC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
-		314BAC5E1E49E75D002DD4AC /* mediaserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mediaserver.h; sourceTree = "<group>"; };
-		314BAC601E49E75D002DD4AC /* chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chapter.h; sourceTree = "<group>"; };
-		314BAC611E49E75D002DD4AC /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
-		314BAC621E49E75D002DD4AC /* file_prop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_prop.h; sourceTree = "<group>"; };
-		314BAC631E49E75D002DD4AC /* general.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = general.h; sourceTree = "<group>"; };
-		314BAC641E49E75D002DD4AC /* isma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isma.h; sourceTree = "<group>"; };
-		314BAC651E49E75D002DD4AC /* itmf_generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itmf_generic.h; sourceTree = "<group>"; };
-		314BAC661E49E75D002DD4AC /* itmf_tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itmf_tags.h; sourceTree = "<group>"; };
-		314BAC671E49E75D002DD4AC /* mp4v2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp4v2.h; sourceTree = "<group>"; };
-		314BAC681E49E75D002DD4AC /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
-		314BAC691E49E75D002DD4AC /* project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project.h; sourceTree = "<group>"; };
-		314BAC6A1E49E75D002DD4AC /* sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sample.h; sourceTree = "<group>"; };
-		314BAC6B1E49E75D002DD4AC /* streaming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streaming.h; sourceTree = "<group>"; };
-		314BAC6C1E49E75D002DD4AC /* track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = track.h; sourceTree = "<group>"; };
-		314BAC6D1E49E75D002DD4AC /* track_prop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = track_prop.h; sourceTree = "<group>"; };
-		314BAC711E49E75D002DD4AC /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
-		314BAC721E49E75D002DD4AC /* libmp4v2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp4v2.a; sourceTree = "<group>"; };
 		314BAC781E49E95A002DD4AC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		3190C07A1E7A962F005CF83E /* ReplayRTSPBro.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReplayRTSPBro.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3190C07D1E7A962F005CF83E /* MovieClipHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieClipHandler.h; sourceTree = "<group>"; };
+		3190C07E1E7A962F005CF83E /* MovieClipHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieClipHandler.m; sourceTree = "<group>"; };
+		3190C0801E7A962F005CF83E /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		3190C0811E7A962F005CF83E /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		3190C0831E7A962F005CF83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3190C0881E7A962F005CF83E /* ReplayRTSPBroUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReplayRTSPBroUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3190C08A1E7A962F005CF83E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3190C08D1E7A962F005CF83E /* BroadcastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastViewController.h; sourceTree = "<group>"; };
+		3190C08E1E7A962F005CF83E /* BroadcastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastViewController.m; sourceTree = "<group>"; };
+		3190C0911E7A9630005CF83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3190C0931E7A9630005CF83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3190C0D91E7A98E4005CF83E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3190C0DB1E7A98F0005CF83E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3190C0DE1E7A9900005CF83E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3190C0E01E7A990D005CF83E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3190C0E21E7A9916005CF83E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3190C0E61E7A9A50005CF83E /* AVEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVEncoder.h; sourceTree = "<group>"; };
+		3190C0E71E7A9A50005CF83E /* AVEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AVEncoder.mm; sourceTree = "<group>"; };
+		3190C0E81E7A9A50005CF83E /* MP4Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP4Atom.h; sourceTree = "<group>"; };
+		3190C0E91E7A9A50005CF83E /* MP4Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MP4Atom.m; sourceTree = "<group>"; };
+		3190C0EA1E7A9A50005CF83E /* NALUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NALUnit.cpp; sourceTree = "<group>"; };
+		3190C0EB1E7A9A50005CF83E /* NALUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NALUnit.h; sourceTree = "<group>"; };
+		3190C0EC1E7A9A50005CF83E /* VideoEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEncoder.h; sourceTree = "<group>"; };
+		3190C0ED1E7A9A50005CF83E /* VideoEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEncoder.m; sourceTree = "<group>"; };
+		3190C0EE1E7A9A50005CF83E /* CameraServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraServer.h; sourceTree = "<group>"; };
+		3190C0EF1E7A9A50005CF83E /* CameraServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraServer.m; sourceTree = "<group>"; };
+		3190C0F11E7A9A50005CF83E /* RTSPClientConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPClientConnection.h; sourceTree = "<group>"; };
+		3190C0F21E7A9A50005CF83E /* RTSPClientConnection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RTSPClientConnection.mm; sourceTree = "<group>"; };
+		3190C0F31E7A9A50005CF83E /* RTSPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPMessage.h; sourceTree = "<group>"; };
+		3190C0F41E7A9A50005CF83E /* RTSPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPMessage.m; sourceTree = "<group>"; };
+		3190C0F51E7A9A50005CF83E /* RTSPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPServer.h; sourceTree = "<group>"; };
+		3190C0F61E7A9A50005CF83E /* RTSPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPServer.m; sourceTree = "<group>"; };
 		319FE9271E4B69AE009EDEFC /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		9AF00B8870626C8AB644F987 /* Pods-STTest1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTest1.release.xcconfig"; path = "Pods/Target Support Files/Pods-STTest1/Pods-STTest1.release.xcconfig"; sourceTree = "<group>"; };
 		EF2E383DF27DEDC655094302 /* Pods-STTest1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTest1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STTest1/Pods-STTest1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,14 +170,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3190C0E31E7A9916005CF83E /* CoreVideo.framework in Frameworks */,
+				3190C0E11E7A990D005CF83E /* CoreMedia.framework in Frameworks */,
+				3190C0DF1E7A9900005CF83E /* AVFoundation.framework in Frameworks */,
+				3190C0DD1E7A98F8005CF83E /* UIKit.framework in Frameworks */,
+				3190C0DC1E7A98F0005CF83E /* Foundation.framework in Frameworks */,
+				3190C0DA1E7A98E4005CF83E /* CoreGraphics.framework in Frameworks */,
 				319FE9281E4B69AE009EDEFC /* ReplayKit.framework in Frameworks */,
 				314BABB71E49E202002DD4AC /* libiconv.tbd in Frameworks */,
-				314BAC751E49E75D002DD4AC /* libintl.a in Frameworks */,
-				314BAC761E49E75D002DD4AC /* libmp4v2.a in Frameworks */,
-				3117FF9A1E4AD6B000C8304B /* libairplaysdk-2.a in Frameworks */,
 				314BABB51E49E1F4002DD4AC /* libstdc++.tbd in Frameworks */,
 				314BABB31E49E1E7002DD4AC /* libstdc++.6.tbd in Frameworks */,
-				3117FF991E4AD6B000C8304B /* libairplaysdk-1.a in Frameworks */,
 				95C06DCD5BC604234D368127 /* libPods-STTest1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +195,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3190C0771E7A962F005CF83E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3190C07B1E7A962F005CF83E /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3190C0851E7A962F005CF83E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3190C0891E7A962F005CF83E /* ReplayKit.framework in Frameworks */,
+				3190C08B1E7A962F005CF83E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +233,8 @@
 				3116269A1E49608F008A9500 /* STTest1 */,
 				311626B71E49608F008A9500 /* STTest1Tests */,
 				311626C21E49608F008A9500 /* STTest1UITests */,
+				3190C07C1E7A962F005CF83E /* ReplayRTSPBro */,
+				3190C08C1E7A962F005CF83E /* ReplayRTSPBroUI */,
 				311626991E49608F008A9500 /* Products */,
 				314BAB791E49DEDC002DD4AC /* Frameworks */,
 				14C08A37EB1D6034CFEE4141 /* Pods */,
@@ -196,6 +247,8 @@
 				311626981E49608F008A9500 /* STTest1.app */,
 				311626B41E49608F008A9500 /* STTest1Tests.xctest */,
 				311626BF1E49608F008A9500 /* STTest1UITests.xctest */,
+				3190C07A1E7A962F005CF83E /* ReplayRTSPBro.appex */,
+				3190C0881E7A962F005CF83E /* ReplayRTSPBroUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,8 +256,8 @@
 		3116269A1E49608F008A9500 /* STTest1 */ = {
 			isa = PBXGroup;
 			children = (
+				3190C0A21E7A9742005CF83E /* Thirdlib */,
 				3117FF9B1E4B016400C8304B /* Images */,
-				314BAB8B1E49E0CE002DD4AC /* AirPlay */,
 				311A85CE1E4C069D009B4471 /* headers */,
 				3116269E1E49608F008A9500 /* AppDelegate.h */,
 				3116269F1E49608F008A9500 /* AppDelegate.m */,
@@ -264,123 +317,97 @@
 		311A85CE1E4C069D009B4471 /* headers */ = {
 			isa = PBXGroup;
 			children = (
-				311A85CF1E4C069D009B4471 /* CoreSurface */,
-				311A85D11E4C069D009B4471 /* IOKit */,
-				311A85E31E4C069D009B4471 /* IOMobileFrameBuffer.h */,
-				311A85E41E4C069D009B4471 /* IOSurface */,
 			);
 			path = headers;
-			sourceTree = "<group>";
-		};
-		311A85CF1E4C069D009B4471 /* CoreSurface */ = {
-			isa = PBXGroup;
-			children = (
-				311A85D01E4C069D009B4471 /* CoreSurface.h */,
-			);
-			path = CoreSurface;
-			sourceTree = "<group>";
-		};
-		311A85D11E4C069D009B4471 /* IOKit */ = {
-			isa = PBXGroup;
-			children = (
-				311A85D21E4C069D009B4471 /* IOBSD.h */,
-				311A85D31E4C069D009B4471 /* IOCFBundle.h */,
-				311A85D41E4C069D009B4471 /* IOCFPlugIn.h */,
-				311A85D51E4C069D009B4471 /* IOCFSerialize.h */,
-				311A85D61E4C069D009B4471 /* IOCFUnserialize.h */,
-				311A85D71E4C069D009B4471 /* IOCFURLAccess.h */,
-				311A85D81E4C069D009B4471 /* IODataQueueClient.h */,
-				311A85D91E4C069D009B4471 /* IODataQueueShared.h */,
-				311A85DA1E4C069D009B4471 /* IOKitKeys.h */,
-				311A85DB1E4C069D009B4471 /* IOKitLib.h */,
-				311A85DC1E4C069D009B4471 /* iokitmig.h */,
-				311A85DD1E4C069D009B4471 /* IOKitServer.h */,
-				311A85DE1E4C069D009B4471 /* IOMessage.h */,
-				311A85DF1E4C069D009B4471 /* IOReturn.h */,
-				311A85E01E4C069D009B4471 /* IOSharedLock.h */,
-				311A85E11E4C069D009B4471 /* IOTypes.h */,
-				311A85E21E4C069D009B4471 /* OSMessageNotification.h */,
-			);
-			path = IOKit;
-			sourceTree = "<group>";
-		};
-		311A85E41E4C069D009B4471 /* IOSurface */ = {
-			isa = PBXGroup;
-			children = (
-				311A85E51E4C069D009B4471 /* IOSurface.h */,
-				311A85E61E4C069D009B4471 /* IOSurfaceAccelerator.h */,
-				311A85E71E4C069D009B4471 /* IOSurfaceAPI.h */,
-				311A85E81E4C069D009B4471 /* IOSurfaceBase.h */,
-			);
-			path = IOSurface;
 			sourceTree = "<group>";
 		};
 		314BAB791E49DEDC002DD4AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3190C0E21E7A9916005CF83E /* CoreVideo.framework */,
+				3190C0E01E7A990D005CF83E /* CoreMedia.framework */,
+				3190C0DE1E7A9900005CF83E /* AVFoundation.framework */,
+				3190C0DB1E7A98F0005CF83E /* Foundation.framework */,
+				3190C0D91E7A98E4005CF83E /* CoreGraphics.framework */,
 				319FE9271E4B69AE009EDEFC /* ReplayKit.framework */,
 				314BABB61E49E202002DD4AC /* libiconv.tbd */,
 				314BABB41E49E1F4002DD4AC /* libstdc++.tbd */,
 				314BABB21E49E1E7002DD4AC /* libstdc++.6.tbd */,
 				26000CC6577BB61C3C7AE30B /* libPods-STTest1.a */,
+				3190C08A1E7A962F005CF83E /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		314BAB8B1E49E0CE002DD4AC /* AirPlay */ = {
+		3190C07C1E7A962F005CF83E /* ReplayRTSPBro */ = {
 			isa = PBXGroup;
 			children = (
-				314BAC5D1E49E75D002DD4AC /* include */,
-				314BAC6E1E49E75D002DD4AC /* lib */,
-				314BAB8C1E49E0CE002DD4AC /* CSScreenRecorder.h */,
-				314BAB8D1E49E0CE002DD4AC /* CSScreenRecorder.m */,
-				314BAB8E1E49E0CE002DD4AC /* IDFileManager.h */,
-				314BAB8F1E49E0CE002DD4AC /* IDFileManager.m */,
-				314BAB901E49E0CE002DD4AC /* Utilities.h */,
-				314BAB911E49E0CE002DD4AC /* Utilities.m */,
+				3190C0E41E7A9A50005CF83E /* RTSPReplay */,
+				3190C07D1E7A962F005CF83E /* MovieClipHandler.h */,
+				3190C07E1E7A962F005CF83E /* MovieClipHandler.m */,
+				3190C0801E7A962F005CF83E /* SampleHandler.h */,
+				3190C0811E7A962F005CF83E /* SampleHandler.m */,
+				3190C0831E7A962F005CF83E /* Info.plist */,
 			);
-			path = AirPlay;
+			path = ReplayRTSPBro;
 			sourceTree = "<group>";
 		};
-		314BAC5D1E49E75D002DD4AC /* include */ = {
+		3190C08C1E7A962F005CF83E /* ReplayRTSPBroUI */ = {
 			isa = PBXGroup;
 			children = (
-				314BAC5E1E49E75D002DD4AC /* mediaserver.h */,
-				314BAC5F1E49E75D002DD4AC /* mp4v2 */,
+				3190C08D1E7A962F005CF83E /* BroadcastViewController.h */,
+				3190C08E1E7A962F005CF83E /* BroadcastViewController.m */,
+				3190C0901E7A9630005CF83E /* MainInterface.storyboard */,
+				3190C0931E7A9630005CF83E /* Info.plist */,
 			);
-			path = include;
+			path = ReplayRTSPBroUI;
 			sourceTree = "<group>";
 		};
-		314BAC5F1E49E75D002DD4AC /* mp4v2 */ = {
+		3190C0A21E7A9742005CF83E /* Thirdlib */ = {
 			isa = PBXGroup;
 			children = (
-				314BAC601E49E75D002DD4AC /* chapter.h */,
-				314BAC611E49E75D002DD4AC /* file.h */,
-				314BAC621E49E75D002DD4AC /* file_prop.h */,
-				314BAC631E49E75D002DD4AC /* general.h */,
-				314BAC641E49E75D002DD4AC /* isma.h */,
-				314BAC651E49E75D002DD4AC /* itmf_generic.h */,
-				314BAC661E49E75D002DD4AC /* itmf_tags.h */,
-				314BAC671E49E75D002DD4AC /* mp4v2.h */,
-				314BAC681E49E75D002DD4AC /* platform.h */,
-				314BAC691E49E75D002DD4AC /* project.h */,
-				314BAC6A1E49E75D002DD4AC /* sample.h */,
-				314BAC6B1E49E75D002DD4AC /* streaming.h */,
-				314BAC6C1E49E75D002DD4AC /* track.h */,
-				314BAC6D1E49E75D002DD4AC /* track_prop.h */,
 			);
-			path = mp4v2;
+			path = Thirdlib;
 			sourceTree = "<group>";
 		};
-		314BAC6E1E49E75D002DD4AC /* lib */ = {
+		3190C0E41E7A9A50005CF83E /* RTSPReplay */ = {
 			isa = PBXGroup;
 			children = (
-				3117FF971E4AD6B000C8304B /* libairplaysdk-1.a */,
-				3117FF981E4AD6B000C8304B /* libairplaysdk-2.a */,
-				314BAC711E49E75D002DD4AC /* libintl.a */,
-				314BAC721E49E75D002DD4AC /* libmp4v2.a */,
+				3190C0E51E7A9A50005CF83E /* AVEncoder */,
+				3190C0EE1E7A9A50005CF83E /* CameraServer.h */,
+				3190C0EF1E7A9A50005CF83E /* CameraServer.m */,
+				3190C0F01E7A9A50005CF83E /* RTSP */,
 			);
-			path = lib;
+			name = RTSPReplay;
+			path = STTest1/Thirdlib/RTSPReplay;
+			sourceTree = SOURCE_ROOT;
+		};
+		3190C0E51E7A9A50005CF83E /* AVEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				3190C0E61E7A9A50005CF83E /* AVEncoder.h */,
+				3190C0E71E7A9A50005CF83E /* AVEncoder.mm */,
+				3190C0E81E7A9A50005CF83E /* MP4Atom.h */,
+				3190C0E91E7A9A50005CF83E /* MP4Atom.m */,
+				3190C0EA1E7A9A50005CF83E /* NALUnit.cpp */,
+				3190C0EB1E7A9A50005CF83E /* NALUnit.h */,
+				3190C0EC1E7A9A50005CF83E /* VideoEncoder.h */,
+				3190C0ED1E7A9A50005CF83E /* VideoEncoder.m */,
+			);
+			path = AVEncoder;
+			sourceTree = "<group>";
+		};
+		3190C0F01E7A9A50005CF83E /* RTSP */ = {
+			isa = PBXGroup;
+			children = (
+				3190C0F11E7A9A50005CF83E /* RTSPClientConnection.h */,
+				3190C0F21E7A9A50005CF83E /* RTSPClientConnection.mm */,
+				3190C0F31E7A9A50005CF83E /* RTSPMessage.h */,
+				3190C0F41E7A9A50005CF83E /* RTSPMessage.m */,
+				3190C0F51E7A9A50005CF83E /* RTSPServer.h */,
+				3190C0F61E7A9A50005CF83E /* RTSPServer.m */,
+			);
+			path = RTSP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,10 +423,13 @@
 				311626961E49608F008A9500 /* Resources */,
 				8119B20E5FA666E3BA720DE7 /* [CP] Embed Pods Frameworks */,
 				D8E6AA4390AD40EE4CC3B17F /* [CP] Copy Pods Resources */,
+				3190C0A01E7A9630005CF83E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3190C0951E7A9630005CF83E /* PBXTargetDependency */,
+				3190C0981E7A9630005CF83E /* PBXTargetDependency */,
 			);
 			name = STTest1;
 			productName = STTest1;
@@ -442,6 +472,40 @@
 			productReference = 311626BF1E49608F008A9500 /* STTest1UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3190C0791E7A962F005CF83E /* ReplayRTSPBro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3190C09D1E7A9630005CF83E /* Build configuration list for PBXNativeTarget "ReplayRTSPBro" */;
+			buildPhases = (
+				3190C0761E7A962F005CF83E /* Sources */,
+				3190C0771E7A962F005CF83E /* Frameworks */,
+				3190C0781E7A962F005CF83E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReplayRTSPBro;
+			productName = ReplayRTSPBro;
+			productReference = 3190C07A1E7A962F005CF83E /* ReplayRTSPBro.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3190C0871E7A962F005CF83E /* ReplayRTSPBroUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3190C09A1E7A9630005CF83E /* Build configuration list for PBXNativeTarget "ReplayRTSPBroUI" */;
+			buildPhases = (
+				3190C0841E7A962F005CF83E /* Sources */,
+				3190C0851E7A962F005CF83E /* Frameworks */,
+				3190C0861E7A962F005CF83E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReplayRTSPBroUI;
+			productName = ReplayRTSPBroUI;
+			productReference = 3190C0881E7A962F005CF83E /* ReplayRTSPBroUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -467,6 +531,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 311626971E49608F008A9500;
 					};
+					3190C0791E7A962F005CF83E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6LL2FJJ5YZ;
+						ProvisioningStyle = Automatic;
+					};
+					3190C0871E7A962F005CF83E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6LL2FJJ5YZ;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 311626931E49608F008A9500 /* Build configuration list for PBXProject "STTest1" */;
@@ -485,6 +559,8 @@
 				311626971E49608F008A9500 /* STTest1 */,
 				311626B31E49608F008A9500 /* STTest1Tests */,
 				311626BE1E49608F008A9500 /* STTest1UITests */,
+				3190C0791E7A962F005CF83E /* ReplayRTSPBro */,
+				3190C0871E7A962F005CF83E /* ReplayRTSPBroUI */,
 			);
 		};
 /* End PBXProject section */
@@ -515,6 +591,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3190C0781E7A962F005CF83E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3190C0861E7A962F005CF83E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3190C0921E7A9630005CF83E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,10 +667,7 @@
 				311626A61E49608F008A9500 /* SecondViewController.m in Sources */,
 				311626A01E49608F008A9500 /* AppDelegate.m in Sources */,
 				311A85CC1E4C049E009B4471 /* ThirdViewController.m in Sources */,
-				314BAB931E49E0CE002DD4AC /* IDFileManager.m in Sources */,
-				314BAB921E49E0CE002DD4AC /* CSScreenRecorder.m in Sources */,
 				311626A31E49608F008A9500 /* FirstViewController.m in Sources */,
-				314BAB941E49E0CE002DD4AC /* Utilities.m in Sources */,
 				3116269D1E49608F008A9500 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +688,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3190C0761E7A962F005CF83E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3190C0821E7A962F005CF83E /* SampleHandler.m in Sources */,
+				3190C0FB1E7A9A50005CF83E /* CameraServer.m in Sources */,
+				3190C0F91E7A9A50005CF83E /* NALUnit.cpp in Sources */,
+				3190C07F1E7A962F005CF83E /* MovieClipHandler.m in Sources */,
+				3190C0FD1E7A9A50005CF83E /* RTSPMessage.m in Sources */,
+				3190C0FE1E7A9A50005CF83E /* RTSPServer.m in Sources */,
+				3190C0F81E7A9A50005CF83E /* MP4Atom.m in Sources */,
+				3190C0FA1E7A9A50005CF83E /* VideoEncoder.m in Sources */,
+				3190C0F71E7A9A50005CF83E /* AVEncoder.mm in Sources */,
+				3190C0FC1E7A9A50005CF83E /* RTSPClientConnection.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3190C0841E7A962F005CF83E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3190C08F1E7A9630005CF83E /* BroadcastViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -612,6 +725,16 @@
 			isa = PBXTargetDependency;
 			target = 311626971E49608F008A9500 /* STTest1 */;
 			targetProxy = 311626C01E49608F008A9500 /* PBXContainerItemProxy */;
+		};
+		3190C0951E7A9630005CF83E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3190C0871E7A962F005CF83E /* ReplayRTSPBroUI */;
+			targetProxy = 3190C0941E7A9630005CF83E /* PBXContainerItemProxy */;
+		};
+		3190C0981E7A9630005CF83E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3190C0791E7A962F005CF83E /* ReplayRTSPBro */;
+			targetProxy = 3190C0971E7A9630005CF83E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -630,6 +753,14 @@
 				311626AD1E49608F008A9500 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3190C0901E7A9630005CF83E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3190C0911E7A9630005CF83E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -675,7 +806,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -717,7 +848,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -741,7 +872,7 @@
 					"$(PROJECT_DIR)/STTest1/headers",
 				);
 				INFOPLIST_FILE = STTest1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -772,7 +903,7 @@
 					"$(PROJECT_DIR)/STTest1/headers",
 				);
 				INFOPLIST_FILE = STTest1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -833,6 +964,58 @@
 			};
 			name = Release;
 		};
+		3190C09B1E7A9630005CF83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6LL2FJJ5YZ;
+				INFOPLIST_FILE = ReplayRTSPBroUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.STTest1.ReplayRTSPBroUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3190C09C1E7A9630005CF83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6LL2FJJ5YZ;
+				INFOPLIST_FILE = ReplayRTSPBroUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.STTest1.ReplayRTSPBroUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3190C09E1E7A9630005CF83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6LL2FJJ5YZ;
+				INFOPLIST_FILE = ReplayRTSPBro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.STTest1.ReplayRTSPBro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3190C09F1E7A9630005CF83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6LL2FJJ5YZ;
+				INFOPLIST_FILE = ReplayRTSPBro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.STTest1.ReplayRTSPBro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -871,6 +1054,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3190C09A1E7A9630005CF83E /* Build configuration list for PBXNativeTarget "ReplayRTSPBroUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3190C09B1E7A9630005CF83E /* Debug */,
+				3190C09C1E7A9630005CF83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3190C09D1E7A9630005CF83E /* Build configuration list for PBXNativeTarget "ReplayRTSPBro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3190C09E1E7A9630005CF83E /* Debug */,
+				3190C09F1E7A9630005CF83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

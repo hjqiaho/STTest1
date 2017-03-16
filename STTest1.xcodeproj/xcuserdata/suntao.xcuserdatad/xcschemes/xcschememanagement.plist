@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ReplayRTSPBro.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ReplayRTSPBroUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>STTest1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>311626BE1E49608F008A9500</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3190C0791E7A962F005CF83E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3190C0871E7A962F005CF83E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

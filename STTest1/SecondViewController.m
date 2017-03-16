@@ -13,14 +13,16 @@
 {
     
 }
-@property (nonatomic, strong)UIButton *btnStart;
-@property (nonatomic, strong)UIButton *btnStop;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
+
+@property (weak, nonatomic) IBOutlet UIProgressView *progressViewT;
 @property (nonatomic, strong)NSTimer *progressTimer;
-@property (nonatomic, strong)UIProgressView *progressView;
-@property (nonatomic, strong)UIActivityIndicatorView *activity;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
+
+@property (weak, nonatomic) IBOutlet UILabel *lbTime;
 @property (nonatomic, strong)UIView *tipView;
 @property (nonatomic, strong)UILabel *lbTip;
-@property (nonatomic, strong)UILabel *lbTime;
 @end
 
 @implementation SecondViewController
@@ -30,14 +32,9 @@
 
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-
-static NSString *StartRecord = @"开始";
-static NSString *StopRecord = @"结束";
 
 #if TARGET_IPHONE_SIMULATOR
 #define SIMULATOR 1
@@ -58,79 +55,14 @@ static NSString *StopRecord = @"结束";
         [self showSimulatorWarning];
         return;
     }
-    
-    UILabel *lb = nil;
-    CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    
-    
-    //标题
-    lb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 140)];
-    lb.font = [UIFont boldSystemFontOfSize:32];
-    lb.backgroundColor = [UIColor clearColor];
-    lb.textColor = [UIColor blackColor];
-    lb.textAlignment = NSTextAlignmentCenter;
-    lb.numberOfLines = 3;
-    lb.text = @"苹果ReplayKit Demo";
-    lb.center =  CGPointMake(screenSize.width/2, 80);
-    [self.view addSubview:lb];
-    
-    //创建按钮
-    UIButton *btn = [self createButtonWithTitle:StartRecord andCenter:CGPointMake(screenSize.width/2 - 100, 200)];
-    [self.view addSubview:btn];
-    self.btnStart = btn;
-    
-    btn = [self createButtonWithTitle:StopRecord andCenter:CGPointMake(screenSize.width/2 + 100, 200)];
-    [self.view addSubview:btn];
-    self.btnStop = btn;
-    [self setButton:btn enabled:NO];
-    
-    //loading指示
-    UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 80)];
-    [self.view addSubview:view];
-    view.backgroundColor = [UIColor redColor];
-    view.layer.cornerRadius = 8.0f;
-    view.center = CGPointMake(screenSize.width/2, 300);
-    activity.center = CGPointMake(30, view.frame.size.height/2);
-    [view addSubview:activity];
-    [activity startAnimating];
-    self.activity = activity;
-    lb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 280, 80)];
-    lb.font = [UIFont boldSystemFontOfSize:20];
-    lb.backgroundColor = [UIColor clearColor];
-    lb.textColor = [UIColor blackColor];
-    lb.layer.cornerRadius = 4.0;
-    lb.textAlignment = NSTextAlignmentCenter;
-    [view addSubview:lb];
-    self.lbTip = lb;
-    self.tipView = view;
+
     [self hideTip];
     
-    
-    //显示时间（用于看录制结果时能知道时间）
-    lb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
-    lb.font = [UIFont boldSystemFontOfSize:20];
-    lb.backgroundColor = [UIColor redColor];
-    lb.textColor = [UIColor blackColor];
-    lb.layer.cornerRadius = 4.0;
     NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init] ;
     [dateFormat setDateFormat: @"HH:mm:ss"];
     NSString *dateString = [dateFormat stringFromDate:[NSDate date]];
-    lb.text =  dateString;
-    lb.center = CGPointMake(screenSize.width/2, screenSize.height/2 + 100);
-    lb.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:lb];
-    self.lbTime = lb;
-    
-    //进度条 （显示动画，不然看不出画面的变化）
-    UIProgressView *progress = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 0, screenSize.width*0.8, 10)];
-    progress.center = CGPointMake(screenSize.width/2, screenSize.height/2 + 150);
-    progress.progressViewStyle = UIProgressViewStyleDefault;
-    progress.progress = 0.0;
-    [self.view addSubview:progress];
-    self.progressView = progress;
-    
-    //计时器
+    _lbTime.text =  dateString;
+
     //更新时间
     [NSTimer scheduledTimerWithTimeInterval:1.0f
                                      target:self
@@ -142,39 +74,23 @@ static NSString *StopRecord = @"结束";
 #pragma mark - UI控件
 //显示 提示信息
 - (void)showTipWithText:(NSString *)tip activity:(BOOL)activity{
-    [self.activity startAnimating];
+    [_activityView startAnimating];
     self.lbTip.text = tip;
     self.tipView.hidden = NO;
     if (activity) {
-        self.activity.hidden = NO;
-        [self.activity startAnimating];
+        _activityView.hidden = NO;
+        [_activityView startAnimating];
     } else {
-        [self.activity stopAnimating];
-        self.activity.hidden = YES;
+        [_activityView stopAnimating];
+        _activityView.hidden = YES;
     }
 }
 //隐藏 提示信息
 - (void)hideTip {
     self.tipView.hidden = YES;
-    [self.activity stopAnimating];
+    [_activityView stopAnimating];
 }
 
-//创建按钮
-- (UIButton *)createButtonWithTitle:(NSString *)title andCenter:(CGPoint)center {
-    
-    CGRect rect = CGRectMake(0, 0, 160, 60);
-    UIButton *btn = [[UIButton alloc] initWithFrame:rect];
-    btn.layer.cornerRadius = 5.0;
-    btn.layer.borderWidth = 2.0;
-    btn.layer.borderColor = [[UIColor blackColor] CGColor];
-    btn.backgroundColor = [UIColor lightGrayColor];
-    btn.center = center;
-    [btn setTitle:title forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(onBtnPressed:) forControlEvents:UIControlEventTouchDown];
-    return btn;
-    
-}
 
 //设置按钮是否可点击
 - (void)setButton:(UIButton *)button enabled:(BOOL)enabled {
@@ -276,35 +192,18 @@ static NSString *StopRecord = @"结束";
 }
 
 #pragma mark - 按钮 回调
-//按钮事件
-- (void)onBtnPressed:(UIButton *)sender {
-    
-    //点击效果
-    sender.transform = CGAffineTransformMakeScale(0.8, 0.8);
-    float duration = 0.3;
-    [UIView animateWithDuration:duration
-                     animations:^{
-                         sender.transform = CGAffineTransformMakeScale(1.1, 1.1);
-                     }completion:^(BOOL finish){
-                         [UIView animateWithDuration:duration
-                                          animations:^{
-                                              sender.transform = CGAffineTransformMakeScale(1.0, 1.0);
-                                          }completion:^(BOOL finish){ }];
-                     }];
-    
-    NSString *function = sender.titleLabel.text;
-    if ([function isEqualToString:StartRecord]) {
-        [self startRecord];
-    }
-    else if ([function isEqualToString:StopRecord]) {
-        [self stopRecord];
-    }
+
+- (IBAction)start:(id)sender {
+    [self startRecord];
+
 }
 
+- (IBAction)stop:(id)sender {
+    [self stopRecord];
+
+}
 
 - (void)startRecord {
-    
-    //    [self setButton:self.btnStart enabled:NO];
     
     NSLog(@"ReplayKit只支持真机录屏，支持游戏录屏，不支持录avplayer播放的视频");
     NSLog(@"检查机器和版本是否支持ReplayKit录制...");
@@ -317,7 +216,7 @@ static NSString *StopRecord = @"结束";
     
     __weak SecondViewController *weakSelf = self;
     
-    NSLog(@"%@ 录制", StartRecord);
+    NSLog(@"startRecord 开始录制");
     [self showTipWithText:@"录制初始化" activity:YES];
     
     [[RPScreenRecorder sharedRecorder] setCameraEnabled:YES];
@@ -331,8 +230,8 @@ static NSString *StopRecord = @"结束";
             [weakSelf showTipWithText:error.description activity:NO];
         } else {
             //其他处理
-            [weakSelf setButton:self.btnStop enabled:YES];
-            [weakSelf setButton:self.btnStart enabled:NO];
+            [weakSelf setButton:_stopButton enabled:YES];
+            [weakSelf setButton:_startButton enabled:NO];
             
             [weakSelf showTipWithText:@"正在录制" activity:NO];
             //更新进度条
@@ -346,10 +245,10 @@ static NSString *StopRecord = @"结束";
 }
 
 - (void)stopRecord {
-    NSLog(@"%@ 录制", StopRecord);
+    NSLog(@"StopRecord 停止录制");
     
-    [self setButton:self.btnStart enabled:YES];
-    [self setButton:self.btnStop enabled:NO];
+    [self setButton:_startButton enabled:YES];
+    [self setButton:_stopButton enabled:NO];
     
     __weak SecondViewController *weakSelf = self;
     [[RPScreenRecorder sharedRecorder] stopRecordingWithHandler:^(RPPreviewViewController *previewViewController, NSError *  error){
@@ -402,10 +301,10 @@ static NSString *StopRecord = @"结束";
 
 //改变进度条的显示的进度
 - (void)changeProgressValue {
-    float progress = self.progressView.progress + 0.01;
-    [self.progressView setProgress:progress animated:NO];
+    float progress = _progressViewT.progress + 0.01;
+    [_progressViewT setProgress:progress animated:NO];
     if (progress >= 1.0) {
-        self.progressView.progress = 0.0;
+        _progressViewT.progress = 0.0;
     }
 }
 //更新显示的时间
