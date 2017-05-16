@@ -9,12 +9,37 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GDLiveStreaming.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GPUImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-STTest1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Toast.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UriParser-cpp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VideoCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +52,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>84A1DC7DB8641C597CA38AF518FC8E40</key>
+		<key>684E43286B68C01EBFB03C5B18118C91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A25FBF5D16C6DF49A66A8CE2385BFD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>938B30131E53CB220B2E5B04C5A3ADB5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE6EA1A770E61C7727A6F9178139B956</key>
+		<key>D178992136BCF25559E12ECD9FCBEE7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D61349926F7DFAF8C87DC18EEB796F51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBB11F351C1791C5FF26A8D1566D7815</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8339314CD0C8D3BA846F84F3A065CAD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -25,6 +25,7 @@
 		314BABB51E49E1F4002DD4AC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BABB41E49E1F4002DD4AC /* libstdc++.tbd */; };
 		314BABB71E49E202002DD4AC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BABB61E49E202002DD4AC /* libiconv.tbd */; };
 		314DD0411E8A75100049F37B /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314DD0401E8A75100049F37B /* iflyMSC.framework */; };
+		317789A91ECAD9E300F5D9CA /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317789A81ECAD9E300F5D9CA /* FourthViewController.m */; };
 		318549EC1EA9980300DFE7BC /* MSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318549EB1EA9980300DFE7BC /* MSImagePickerController.m */; };
 		318549EE1EA9980C00DFE7BC /* MSImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 318549ED1EA9980C00DFE7BC /* MSImagePickerController.bundle */; };
 		3190C07B1E7A962F005CF83E /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319FE9271E4B69AE009EDEFC /* ReplayKit.framework */; };
@@ -131,6 +132,8 @@
 		314BABB61E49E202002DD4AC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		314BAC781E49E95A002DD4AC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		314DD0401E8A75100049F37B /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		317789A71ECAD9E300F5D9CA /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		317789A81ECAD9E300F5D9CA /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		318549EA1EA9980300DFE7BC /* MSImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSImagePickerController.h; sourceTree = "<group>"; };
 		318549EB1EA9980300DFE7BC /* MSImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSImagePickerController.m; sourceTree = "<group>"; };
 		318549ED1EA9980C00DFE7BC /* MSImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MSImagePickerController.bundle; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 				311626A51E49608F008A9500 /* SecondViewController.m */,
 				311A85CA1E4C049E009B4471 /* ThirdViewController.h */,
 				311A85CB1E4C049E009B4471 /* ThirdViewController.m */,
+				317789A71ECAD9E300F5D9CA /* FourthViewController.h */,
+				317789A81ECAD9E300F5D9CA /* FourthViewController.m */,
 				311626AA1E49608F008A9500 /* Assets.xcassets */,
 				311626AC1E49608F008A9500 /* LaunchScreen.storyboard */,
 				311626AF1E49608F008A9500 /* Info.plist */,
@@ -690,6 +695,7 @@
 				311A85CC1E4C049E009B4471 /* ThirdViewController.m in Sources */,
 				311626A31E49608F008A9500 /* FirstViewController.m in Sources */,
 				3116269D1E49608F008A9500 /* main.m in Sources */,
+				317789A91ECAD9E300F5D9CA /* FourthViewController.m in Sources */,
 				318549EC1EA9980300DFE7BC /* MSImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
