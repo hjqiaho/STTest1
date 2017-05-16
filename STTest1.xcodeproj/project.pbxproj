@@ -24,6 +24,9 @@
 		314BABB31E49E1E7002DD4AC /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BABB21E49E1E7002DD4AC /* libstdc++.6.tbd */; };
 		314BABB51E49E1F4002DD4AC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BABB41E49E1F4002DD4AC /* libstdc++.tbd */; };
 		314BABB71E49E202002DD4AC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 314BABB61E49E202002DD4AC /* libiconv.tbd */; };
+		314DD0411E8A75100049F37B /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314DD0401E8A75100049F37B /* iflyMSC.framework */; };
+		318549EC1EA9980300DFE7BC /* MSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318549EB1EA9980300DFE7BC /* MSImagePickerController.m */; };
+		318549EE1EA9980C00DFE7BC /* MSImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 318549ED1EA9980C00DFE7BC /* MSImagePickerController.bundle */; };
 		3190C07B1E7A962F005CF83E /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319FE9271E4B69AE009EDEFC /* ReplayKit.framework */; };
 		3190C07F1E7A962F005CF83E /* MovieClipHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C07E1E7A962F005CF83E /* MovieClipHandler.m */; };
 		3190C0821E7A962F005CF83E /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190C0811E7A962F005CF83E /* SampleHandler.m */; };
@@ -127,6 +130,10 @@
 		314BABB41E49E1F4002DD4AC /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		314BABB61E49E202002DD4AC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		314BAC781E49E95A002DD4AC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		314DD0401E8A75100049F37B /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		318549EA1EA9980300DFE7BC /* MSImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSImagePickerController.h; sourceTree = "<group>"; };
+		318549EB1EA9980300DFE7BC /* MSImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSImagePickerController.m; sourceTree = "<group>"; };
+		318549ED1EA9980C00DFE7BC /* MSImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MSImagePickerController.bundle; sourceTree = "<group>"; };
 		3190C07A1E7A962F005CF83E /* ReplayRTSPBro.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReplayRTSPBro.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3190C07D1E7A962F005CF83E /* MovieClipHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieClipHandler.h; sourceTree = "<group>"; };
 		3190C07E1E7A962F005CF83E /* MovieClipHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieClipHandler.m; sourceTree = "<group>"; };
@@ -170,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314DD0411E8A75100049F37B /* iflyMSC.framework in Frameworks */,
 				3190C0E31E7A9916005CF83E /* CoreVideo.framework in Frameworks */,
 				3190C0E11E7A990D005CF83E /* CoreMedia.framework in Frameworks */,
 				3190C0DF1E7A9900005CF83E /* AVFoundation.framework in Frameworks */,
@@ -261,13 +269,13 @@
 				311A85CE1E4C069D009B4471 /* headers */,
 				3116269E1E49608F008A9500 /* AppDelegate.h */,
 				3116269F1E49608F008A9500 /* AppDelegate.m */,
+				311626A71E49608F008A9500 /* Main.storyboard */,
 				311626A11E49608F008A9500 /* FirstViewController.h */,
 				311626A21E49608F008A9500 /* FirstViewController.m */,
 				311626A41E49608F008A9500 /* SecondViewController.h */,
 				311626A51E49608F008A9500 /* SecondViewController.m */,
 				311A85CA1E4C049E009B4471 /* ThirdViewController.h */,
 				311A85CB1E4C049E009B4471 /* ThirdViewController.m */,
-				311626A71E49608F008A9500 /* Main.storyboard */,
 				311626AA1E49608F008A9500 /* Assets.xcassets */,
 				311626AC1E49608F008A9500 /* LaunchScreen.storyboard */,
 				311626AF1E49608F008A9500 /* Info.plist */,
@@ -339,6 +347,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		318549E91EA997FC00DFE7BC /* MSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				318549ED1EA9980C00DFE7BC /* MSImagePickerController.bundle */,
+				318549EA1EA9980300DFE7BC /* MSImagePickerController.h */,
+				318549EB1EA9980300DFE7BC /* MSImagePickerController.m */,
+			);
+			path = MSImagePicker;
+			sourceTree = "<group>";
+		};
 		3190C07C1E7A962F005CF83E /* ReplayRTSPBro */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +384,8 @@
 		3190C0A21E7A9742005CF83E /* Thirdlib */ = {
 			isa = PBXGroup;
 			children = (
+				318549E91EA997FC00DFE7BC /* MSImagePicker */,
+				314DD0401E8A75100049F37B /* iflyMSC.framework */,
 			);
 			path = Thirdlib;
 			sourceTree = "<group>";
@@ -573,6 +593,7 @@
 				3117FFA01E4B017800C8304B /* icon_22x29.png in Resources */,
 				311626AE1E49608F008A9500 /* LaunchScreen.storyboard in Resources */,
 				311626AB1E49608F008A9500 /* Assets.xcassets in Resources */,
+				318549EE1EA9980C00DFE7BC /* MSImagePickerController.bundle in Resources */,
 				3117FFA31E4B017800C8304B /* icon_320x320.png in Resources */,
 				3117FFA21E4B017800C8304B /* icon_64x64.png in Resources */,
 				3117FFA11E4B017800C8304B /* icon_44x58.png in Resources */,
@@ -669,6 +690,7 @@
 				311A85CC1E4C049E009B4471 /* ThirdViewController.m in Sources */,
 				311626A31E49608F008A9500 /* FirstViewController.m in Sources */,
 				3116269D1E49608F008A9500 /* main.m in Sources */,
+				318549EC1EA9980300DFE7BC /* MSImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +886,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 6LL2FJJ5YZ;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STTest1/Thirdlib",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
@@ -872,7 +898,7 @@
 					"$(PROJECT_DIR)/STTest1/headers",
 				);
 				INFOPLIST_FILE = STTest1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -895,6 +921,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 6LL2FJJ5YZ;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STTest1/Thirdlib",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
@@ -903,7 +933,7 @@
 					"$(PROJECT_DIR)/STTest1/headers",
 				);
 				INFOPLIST_FILE = STTest1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -993,11 +1023,12 @@
 		3190C09E1E7A9630005CF83E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6LL2FJJ5YZ;
 				INFOPLIST_FILE = ReplayRTSPBro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.STTest1.ReplayRTSPBro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.STTest1.ReplayRSTPBro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1006,11 +1037,12 @@
 		3190C09F1E7A9630005CF83E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6LL2FJJ5YZ;
 				INFOPLIST_FILE = ReplayRTSPBro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.STTest1.ReplayRTSPBro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.STTest1.ReplayRSTPBro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1062,6 +1094,7 @@
 				3190C09C1E7A9630005CF83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3190C09D1E7A9630005CF83E /* Build configuration list for PBXNativeTarget "ReplayRTSPBro" */ = {
 			isa = XCConfigurationList;
@@ -1070,6 +1103,7 @@
 				3190C09F1E7A9630005CF83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

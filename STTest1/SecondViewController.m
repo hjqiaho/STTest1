@@ -220,9 +220,10 @@
     [self showTipWithText:@"录制初始化" activity:YES];
     
     [[RPScreenRecorder sharedRecorder] setCameraEnabled:YES];
-    
-    //在此可以设置是否允许麦克风（传YES即是使用麦克风，传NO则不是用麦克风）
-    [[RPScreenRecorder sharedRecorder] startRecordingWithMicrophoneEnabled:YES handler:^(NSError *error){
+    [[RPScreenRecorder sharedRecorder] setMicrophoneEnabled:YES];
+
+    //开始录制
+    [[RPScreenRecorder sharedRecorder] startRecordingWithHandler:^(NSError * _Nullable error) {
         NSLog(@"录制开始...");
         [weakSelf hideTip];
         if (error) {
@@ -235,11 +236,10 @@
             
             [weakSelf showTipWithText:@"正在录制" activity:NO];
             //更新进度条
-            weakSelf.progressTimer = [NSTimer scheduledTimerWithTimeInterval:0.05f
-                                                                      target:self
-                                                                    selector:@selector(changeProgressValue)
-                                                                    userInfo:nil
-                                                                     repeats:YES];
+//            weakSelf.progressTimer = [NSTimer scheduledTimerWithTimeInterval:0.05f
+//                                    target:selfselector:@selector(changeProgressValue)
+//                                                                    userInfo:nil
+//                                                                     repeats:YES];
         }
     }];
 }
@@ -251,8 +251,8 @@
     [self setButton:_stopButton enabled:NO];
     
     __weak SecondViewController *weakSelf = self;
-    [[RPScreenRecorder sharedRecorder] stopRecordingWithHandler:^(RPPreviewViewController *previewViewController, NSError *  error){
-        
+    [[RPScreenRecorder sharedRecorder] stopRecordingWithHandler:^(RPPreviewViewController * _Nullable previewViewController, NSError * _Nullable error) {
+    
         
         if (error) {
             NSLog(@"失败消息:%@", error);
@@ -262,7 +262,6 @@
             [weakSelf showTipWithText:@"录制完成" activity:NO];
             
             //显示录制到的视频的预览页
-            NSLog(@"显示预览页面");
             previewViewController.previewControllerDelegate = weakSelf;
             
             //去除计时器
